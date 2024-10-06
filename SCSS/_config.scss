@@ -1,0 +1,16 @@
+// variables
+
+
+// reset styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin flex-center($direction: row, $align-items: none, $justify-content: none) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}

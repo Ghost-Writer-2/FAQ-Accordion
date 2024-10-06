@@ -1,0 +1,68 @@
+@import "config";
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
+  background-size: 100vw;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  // border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 3px #0000001c;
+  width: 500px;
+  height: auto;
+
+  &--title {
+    @include flex-center(row, center);
+    gap: 15px;
+    padding: 20px;
+    padding-bottom: 0;
+
+    img {
+      width: 30px;
+    }
+  }
+
+  &--faqs {
+    padding: 20px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 95% 6%;
+  row-gap: 10px;
+  align-content: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 15px;
+
+  img {
+    text-align: center;
+    width: 28px;
+  }
+
+  &:nth-last-child(1) {
+    border: none;
+  }
+
+
+ .questions {
+  color: hsl(292, 42%, 14%);
+  font-size: 16px;
+  font-weight: bold;
+ }
+
+ p {
+  padding-bottom: 10px;
+  color: hsl(292, 16%, 49%);
+  font-size: 14px;
+  line-height: 1.3rem;
+ }
+}
+

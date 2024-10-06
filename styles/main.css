@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
+  background-size: 100vw;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.1098039216);
+  width: 500px;
+  height: auto;
+}
+.card--title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+  gap: 15px;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.card--title img {
+  width: 30px;
+}
+.card--faqs {
+  padding: 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 95% 6%;
+  row-gap: 10px;
+  align-content: center;
+  border-bottom: 1px solid rgb(221, 221, 221);
+  padding: 15px;
+}
+.row img {
+  text-align: center;
+  width: 28px;
+}
+.row:nth-last-child(1) {
+  border: none;
+}
+.row .questions {
+  color: hsl(292, 42%, 14%);
+  font-size: 16px;
+  font-weight: bold;
+}
+.row p {
+  padding-bottom: 10px;
+  color: hsl(292, 16%, 49%);
+  font-size: 14px;
+  line-height: 1.3rem;
+}/*# sourceMappingURL=main.css.map */
