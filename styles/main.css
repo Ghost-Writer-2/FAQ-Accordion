@@ -17,7 +17,7 @@ body {
 .card {
   background-color: white;
   border-radius: 10px;
-  box-shadow: 0 0 30px 3px rgba(0, 0, 0, 0.1098039216);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3098039216);
   width: 500px;
   height: auto;
 }
@@ -27,7 +27,7 @@ body {
   align-items: center;
   justify-content: none;
   gap: 15px;
-  padding: 20px;
+  padding: 20px 30px;
   padding-bottom: 0;
 }
 .card--title img {
@@ -46,7 +46,10 @@ body {
   padding: 15px;
 }
 .row img {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 28px;
 }
 .row:nth-last-child(1) {
@@ -54,12 +57,22 @@ body {
 }
 .row .questions {
   color: hsl(292, 42%, 14%);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+  padding-bottom: 0;
+  align-content: center;
+  cursor: pointer;
+}
+.row .questions:hover {
+  color: #9a2cd5;
 }
 .row p {
   padding-bottom: 10px;
   color: hsl(292, 16%, 49%);
   font-size: 14px;
   line-height: 1.3rem;
+}
+
+.div-btn {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

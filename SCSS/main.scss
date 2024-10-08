@@ -12,16 +12,15 @@ body {
 
 .card {
   background-color: white;
-  // border: 1px solid black;
   border-radius: 10px;
-  box-shadow: 0 0 30px 3px #0000001c;
+  box-shadow: 0 0 20px 3px #0000004f;
   width: 500px;
   height: auto;
 
   &--title {
     @include flex-center(row, center);
     gap: 15px;
-    padding: 20px;
+    padding: 20px 30px;
     padding-bottom: 0;
 
     img {
@@ -43,7 +42,7 @@ body {
   padding: 15px;
 
   img {
-    text-align: center;
+    @include flex-center(row, center, center);
     width: 28px;
   }
 
@@ -54,8 +53,15 @@ body {
 
  .questions {
   color: hsl(292, 42%, 14%);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
+  padding-bottom: 0;
+  align-content: center;
+  cursor: pointer;
+
+  &:hover {
+    color: $purple;
+  }
  }
 
  p {
@@ -64,5 +70,9 @@ body {
   font-size: 14px;
   line-height: 1.3rem;
  }
+}
+
+.div-btn {
+  cursor: pointer;
 }
 
