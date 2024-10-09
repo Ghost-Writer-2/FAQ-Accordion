@@ -7,10 +7,10 @@
 body {
   display: flex;
   flex-direction: column;
-  background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
-  background-size: 100vw;
   align-items: center;
   justify-content: center;
+  background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
+  background-size: 100vw;
   min-height: 100vh;
 }
 
@@ -20,6 +20,7 @@ body {
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.3098039216);
   width: 500px;
   height: auto;
+  transition: height 3s;
 }
 .card--title {
   display: flex;

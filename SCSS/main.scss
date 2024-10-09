@@ -1,12 +1,9 @@
 @import "config";
 
 body {
-  display: flex;
-  flex-direction: column;
+  @include flex-center(column, center, center);
   background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
   background-size: 100vw;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
 }
 
@@ -16,6 +13,7 @@ body {
   box-shadow: 0 0 20px 3px #0000004f;
   width: 500px;
   height: auto;
+  transition: height 3s;
 
   &--title {
     @include flex-center(row, center);
@@ -75,4 +73,6 @@ body {
 .div-btn {
   cursor: pointer;
 }
+
+
 
