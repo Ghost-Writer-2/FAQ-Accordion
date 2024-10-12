@@ -1,18 +1,10 @@
 const ROWS = document.querySelectorAll('.row');
 const BUTTONS = document.querySelectorAll('.div-btn-js');
 
-BUTTONS.forEach((element, index) => {
+ROWS.forEach((element, index) => {
   element.addEventListener('click', () => {
     toggleNotes(element, index);
   })
-
-  // element.parentElement.addEventListener('click', () => {
-  //   element.classList.add("info");
-
-  //   if (element.classList.contains("info")) {
-  //     showNotes(element, index);
-  //   }
-  // })
 });
 
 function toggleNotes(element, index) {
@@ -20,24 +12,20 @@ function toggleNotes(element, index) {
     
   if (element.classList.contains("info")) {
     showNotes(element, index);
-    console.log(element);
-    
+
   } else {
-    hideNotes(element, index);
-    console.log(element.parentElement.childNodes);
-    console.log(element);
+    hideNotes(index);
   }
 }
 
-function showNotes(element, index) {
-  element.parentElement.appendChild(texts[index]);
-  element.innerHTML = `<img src="/assets/images/icon-minus.svg"  alt="minus_icon" />`
-  
+function showNotes(element, i) {
+  element.appendChild(texts[i]);
+  BUTTONS[i].innerHTML =  `<img src="/assets/images/icon-minus.svg" alt="minus"></img>`;
 }
 
-function hideNotes(element, index) {
-  element.parentElement.removeChild(texts[index]);
-  element.innerHTML = `<img src="/assets/images/icon-plus.svg"  alt="minus_icon" />`
+function hideNotes(i) {
+  texts[i].parentElement.removeChild(texts[i]);
+  BUTTONS[i].innerHTML =  `<img src="/assets/images/icon-plus.svg" alt="plus"></img>`;
 }
 
 const one = document.createElement("P");
@@ -63,4 +51,3 @@ var texts = [one, two, three, four];
 // row four text
   four
     .innerHTML = `The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.`;
-

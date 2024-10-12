@@ -1,0 +1,31 @@
+@media (max-width: 480px) {
+  body {
+    @include flex-center(column, center, center);
+    background: url(/assets/images/background-pattern-mobile.svg) no-repeat top center;
+    background-size: 100vw;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 85vw;
+    transition: 0.3s;
+  }
+
+  .row {
+    grid-template-columns: 70% 30%;
+    column-gap: 20%;
+
+    .questions {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    @include flex-center(column, center, center);
+    background: url(/assets/images/background-pattern-mobile.svg) no-repeat top center;
+    background-size: 100%;
+    min-height: 100vh;
+  }
+}
