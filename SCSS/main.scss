@@ -1,5 +1,6 @@
 @import "config";
 
+// body styles
 body {
   @include flex-center(column, center, center);
   background: url(../assets/images/background-pattern-desktop.svg) no-repeat top center;
@@ -7,6 +8,7 @@ body {
   min-height: 100vh;
 }
 
+// card div style
 .card {
   background-color: white;
   border-radius: 10px;
@@ -15,6 +17,7 @@ body {
   height: auto;
   transition: height 3s;
 
+  // card title
   &--title {
     @include flex-center(row, center);
     gap: 15px;
@@ -31,6 +34,7 @@ body {
   }
 }
 
+// styles for each question and answer row
 .row {
   display: grid;
   grid-template-columns: 95% 6%;

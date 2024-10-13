@@ -1,3 +1,5 @@
+
+// styles for mobile
 @media (max-width: 480px) {
   body {
     @include flex-center(column, center, center);
@@ -21,6 +23,7 @@
   }
 }
 
+// styles for wide screen mobile
 @media (max-width: 900px) {
   body {
     @include flex-center(column, center, center);
