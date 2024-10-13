@@ -2,7 +2,7 @@
 
 body {
   @include flex-center(column, center, center);
-  background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
+  background: url(../assets/images/background-pattern-desktop.svg) no-repeat top center;
   background-size: 100vw;
   min-height: 100vh;
 }

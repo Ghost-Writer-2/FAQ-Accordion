@@ -9,7 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: url(/assets/images/background-pattern-desktop.svg) no-repeat top center;
+  background: url(../assets/images/background-pattern-desktop.svg) no-repeat top center;
   background-size: 100vw;
   min-height: 100vh;
 }
