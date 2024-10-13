@@ -23,13 +23,13 @@ function toggleNotes(element, index) {
 // show answers 
 function showNotes(element, i) {
   element.appendChild(texts[i]);
-  BUTTONS[i].innerHTML =  `<img src="/assets/images/icon-minus.svg" alt="minus"></img>`;
+  BUTTONS[i].innerHTML =  `<img src="./assets/images/icon-minus.svg" alt="minus"></img>`;
 }
 
 // hide  answers
 function hideNotes(i) {
   texts[i].parentElement.removeChild(texts[i]);
-  BUTTONS[i].innerHTML =  `<img src="/assets/images/icon-plus.svg" alt="plus"></img>`;
+  BUTTONS[i].innerHTML =  `<img src="./assets/images/icon-plus.svg" alt="plus"></img>`;
 }
 
 // Answer nodes
