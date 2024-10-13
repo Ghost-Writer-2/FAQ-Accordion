@@ -59,7 +59,7 @@ body {
 .row .questions {
   color: hsl(292, 42%, 14%);
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 700;
   padding-bottom: 0;
   align-content: center;
   transition: color 0.3s;
@@ -95,7 +95,7 @@ footer {
     min-height: 100vh;
   }
   .card {
-    width: 85vw;
+    width: 88vw;
     transition: 0.3s;
   }
   .row {
