@@ -104,9 +104,9 @@ footer {
     transition: 0.3s;
   }
   .row {
-    grid-template-columns: 70% 30%;
-    -moz-column-gap: 20%;
-         column-gap: 20%;
+    grid-template-columns: 85% 30%;
+    -moz-column-gap: 10%;
+         column-gap: 10%;
   }
   .row .questions {
     font-size: 0.9rem;
