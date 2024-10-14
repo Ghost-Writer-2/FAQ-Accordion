@@ -1,5 +1,6 @@
 const ROWS = document.querySelectorAll('.row');
 const BUTTONS = document.querySelectorAll('.div-btn-js');
+const PAGE = document.body
 
 // Toggle answer display
 ROWS.forEach((element, index) => {
@@ -57,3 +58,4 @@ var texts = [one, two, three, four];
 // row-four text
   four
     .innerHTML = `The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.`;
+
