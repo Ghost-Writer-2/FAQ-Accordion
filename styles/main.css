@@ -43,9 +43,13 @@ body {
   display: grid;
   grid-template-columns: 95% 6%;
   row-gap: 10px;
+  text-align: left;
   align-content: center;
+  border: none;
   border-bottom: 1px solid rgb(221, 221, 221);
   padding: 15px;
+  background-color: white;
+  width: 100%;
 }
 .row img {
   display: flex;
